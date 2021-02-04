@@ -1,0 +1,54 @@
+:root {
+    --yellow-color: #FFCB05;
+    --black-color: #231F20;
+    --white-color: #FFFFFF;
+    --fonte-site: Montserrat script=latin rev=1;
+  }
+  
+.texto-chamativo{
+    font-family: var(--fonte-site);
+    font-weight: 800; 
+    font-size: 30px;
+    letter-spacing: -0.9px; 
+    word-spacing: -1px;
+}
+
+.subtexto-chamativo{
+    font-family: var(--fonte-site);
+    font-weight: 300; 
+    font-size: 20px;
+    letter-spacing: -0.1px; 
+    word-spacing: -1px;
+}
+
+.comment-card{
+    border-style: solid;
+    border-color: var(--yellow-color);
+    border-width: 3px;
+}
+
+.img-comentario{
+    width: 100px; 
+    height: 100px; 
+    margin-bottom: -80px ;
+}
+
+
+a:link {
+    color: white;
+}
+
+    /* link que foi visitado */
+a:visited {
+    color: white;
+}
+    
+    /* mouse over */
+a:hover {
+    color: white;
+    }
+    
+/* link selecionado */
+a:active {
+    color: white;
+}
