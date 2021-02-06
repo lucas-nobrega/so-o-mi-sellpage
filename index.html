@@ -29,7 +29,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="/Montserrat/*" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="index.css" />
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <title>Hello, world!</title>
     </head>
 
@@ -70,13 +70,9 @@
                 <p class="texto-chamativo">Bem-vindo ao Treinamento Hokage: um plano que te leva do
                     zero em matemática ao nível avançado. <br><br>Mais de 70 aulas por
                     apenas R$19,90 por mês.</p>
-                <p class="text-left subtexto-chamativo">
-                    Chega de gastar dinheiro com cursos de matemática que não
-                    ensinam o que você precisa aprender. Acreditamos que só o
-                    trabalho duro, dedicação e muito esforço podem te levar aos
-                    melhores resultados.</p>
+                <br><br>
 
-                <a href="#" class="btn align-self-center"
+                <a href="#planos" class="scrollSuave btn align-self-center"
                     style="min-width: 12em; max-width: 15em; background-color: #FFCB05; font-weight: bolder; box-shadow: 0 0 15px #FFCB05;"
                     role="button">COMEÇAR AGORA</a>
 
@@ -177,7 +173,7 @@
             <!--Gambiarra-->
             <div style="margin-top: 80px;"></div>
             <!--Planos--><br>
-            <p class="text-center texto-chamativo mx-4 desktop-div">Comece agora mesmo!<br><br>Assine agora e aprenda
+            <p class="text-center texto-chamativo mx-4 desktop-div" id="planos">Comece agora mesmo!<br><br>Assine agora e aprenda
                 tudo sobre
                 matemática,&nbsp; métodos de
                 estudo,&nbsp; matemática para olimpíadas em mais de 90 horas de
@@ -412,5 +408,14 @@ O mesmo ocorre para a assinatura no modelo anual, que você pode cancelar no mom
             <br>
         </div>
     </body>
+    <script>
+        var $doc = $('html, body');
+        $('.scrollSuave').click(function() {
+            $doc.animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 700);
+            return false;
+        });
+        </script>
 
 </html>
