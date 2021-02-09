@@ -32,6 +32,11 @@
     height: 100px; 
     margin-bottom: -80px ;
 }
+.whatsapp-button {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+  }
 
 
 a:link {
